@@ -29,6 +29,7 @@
   ],
   "C_Cpp.errorSquiggles": "Disabled",
   "files.associations": {
-    "locale.h": "c"
+    "locale.h": "c",
+    "professor": "c"
   }
 }

@@ -1,15 +1,27 @@
-printf("INSIRA SEU CODIGO DE USUARIO: ");
-scanf("%d", &codigo_de_usuario);
+#include <stdio.h>
+#include <math.h>
 
-printf("INSIRA SEU CPF: ");
-scanf("%d", &cpf);
+//Protótipo da função
+float area_circunferencia(float raio);
 
-printf("INSIRA SEU SEXO: ");
-scanf("%s", &sexo);
+int main()
+{
+    float raio = 0, area = 0;
+    
+    printf("Insira o raio: ");
+    scanf("\n%f", &raio);
+    
+    area = area_circunferencia(raio);
+    
+    printf("A área é: %.2f\n", area);
+}
 
-printf("INSIRA SEU SALARIO: ");
-scanf("%f", &salario);
-
-printf("INSIRA SUA IDADE: ");
-scanf("%d", idade_do_usuario);
+//Implementação da função
+float area_circunferencia(float raio)
+{
+   float area = 0;
+   
+   area = M_PI*pow(raio, 2);
+   
+   return area;
 }

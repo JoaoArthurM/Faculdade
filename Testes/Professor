@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+//Protótipo da função
+float area_quadrado(float lado1, float lado2);
+
+int main()
+{
+    float lado1 = 0, lado2 = 0;
+    
+    printf("Insira o primeiro lado: ");
+    scanf("\n%f", &lado1);
+    printf("Insira o segundo lado: ");
+    scanf("\n%f", &lado2);
+    
+    area = area_quadrado(lado1, lado2);
+    
+    printf("A área é: %.2f\n", area);
+}
+
+//Implementação da função
+float area_quadrado(float lado1, float lado2)
+{
+  float area = 0;
+
+   area = lado1*lado2;
+   
+   return area;
+}
